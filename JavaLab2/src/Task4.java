@@ -7,10 +7,6 @@ import java.io.InputStreamReader;
  * var1541b
  * Ввести с клавиатуры два числа, и вывести на экран минимальное из них
  */
-/*
- *
- * @author var1541b
- */
 public class Task4 {
 
     public static void main(String[] args) throws IOException {

@@ -1,12 +1,7 @@
-/*
- * var1541b
+/* var1541b
  * Вывести на экран чётные числа от 1 до 100
  */
 
-/**
- *
- * @author var1541b
- */
 public class Task1 {
 
     public static void main(String[] args) {
@@ -16,5 +11,4 @@ public class Task1 {
             }
         }
     }
-
 }
