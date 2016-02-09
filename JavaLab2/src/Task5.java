@@ -16,8 +16,6 @@ public class Task5 {
         int b = 0;
         int c = 0;
         int d = 0;
-        int x = srav(a, b);
-        int y = srav(c, d);
 
         try {
             String a_str = in.readLine(); //читаем строку с клавиатуры
@@ -46,7 +44,8 @@ public class Task5 {
         } catch (Exception ex) {
             System.out.println("Ошибка ввода 4 числа");
         }
-
+        int x = srav(a, b);
+        int y = srav(c, d);
         if (x > y) {
             System.out.println(y);
         } else {
