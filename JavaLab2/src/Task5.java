@@ -12,17 +12,41 @@ public class Task5 {
         System.out.println("Введите 4 числа");
 
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        String a_str = in.readLine(); //читаем строку с клавиатуры
-        String b_str = in.readLine();
-        String c_str = in.readLine();
-        String d_str = in.readLine();//читаем строку с клавиатуры
-
-        int a = Integer.parseInt(a_str); //преобразовываем строку в число.
-        int b = Integer.parseInt(b_str);
-        int c = Integer.parseInt(c_str);
-        int d = Integer.parseInt(d_str);
+        int a = 0;
+        int b = 0;
+        int c = 0;
+        int d = 0;
         int x = srav(a, b);
         int y = srav(c, d);
+
+        try {
+            String a_str = in.readLine(); //читаем строку с клавиатуры
+            a = Integer.parseInt(a_str); //преобразовываем строку в число.
+        } catch (Exception ex) {
+            System.out.println("Ошибка ввода 1 числа");
+        }
+
+        try {
+            String b_str = in.readLine(); //читаем строку с клавиатуры
+            b = Integer.parseInt(b_str); //преобразовываем строку в число.
+        } catch (Exception ex) {
+            System.out.println("Ошибка ввода 2 числа");
+        }
+
+        try {
+            String c_str = in.readLine(); //читаем строку с клавиатуры
+            c = Integer.parseInt(c_str); //преобразовываем строку в число.
+        } catch (Exception ex) {
+            System.out.println("Ошибка ввода 3 числа");
+        }
+
+        try {
+            String d_str = in.readLine(); //читаем строку с клавиатуры
+            d = Integer.parseInt(d_str); //преобразовываем строку в число.
+        } catch (Exception ex) {
+            System.out.println("Ошибка ввода 4 числа");
+        }
+
         if (x > y) {
             System.out.println(y);
         } else {

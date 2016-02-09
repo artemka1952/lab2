@@ -15,14 +15,14 @@ public class Task2 {
             m_str = in.readLine();//читаем строку с клавиатуры
             m = Integer.parseInt(m_str);
         } catch (IOException ex) {
-            System.out.println("Ошибка ввода");
+            System.out.println("Ошибка ввода 1 числа");
         }
         String n_str = null;
         try {
             n_str = in.readLine();
             n = Integer.parseInt(n_str);
         } catch (IOException ex) {
-            System.out.println("Ошибка ввода");
+            System.out.println("Ошибка ввода 2 числа");
         }
 
         for (int i = 1; i <= m; i++) {

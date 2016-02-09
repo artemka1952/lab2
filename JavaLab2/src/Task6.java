@@ -16,13 +16,13 @@ public class Task6 {
         try {
             n1 = bufferedReader.readLine(); //читаем строку с клавиатуры
         } catch (IOException e) {
-            System.out.println("Ошибка");
+            System.out.println("Ошибка ввода 1 имени");
 
         }
         try {
             n2 = bufferedReader.readLine(); //читаем строку с клавиатуры
         } catch (IOException e) {
-            System.out.println("Ошибка");
+            System.out.println("Ошибка ввода 2 имени");
         }
 
         if ((!n1.matches("^\\D*$")) || (!n2.matches("^\\D*$"))) {

@@ -10,17 +10,26 @@ import java.io.InputStreamReader;
 public class Task4 {
 
     public static void main(String[] args) throws IOException {
-
+        int m = 0;
+        int n = 0;
         System.out.println("Введите 2 числа");
-
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        String m_str = in.readLine(); //читаем строку с клавиатуры
-        String n_str = in.readLine(); //читаем строку с клавиатуры
 
-        int m = Integer.parseInt(m_str); //преобразовываем строку в число.
-        int n = Integer.parseInt(n_str); //преобразовываем строку в число.
-
+        try {
+            String m_str = in.readLine(); //читаем строку с клавиатуры}
+            m = Integer.parseInt(m_str); //преобразовываем строку в число.
+        } catch (Exception ex) {
+            System.out.println("Ошибка ввода 1 числа");
+           
+        }
+        try {
+            String n_str = in.readLine(); //читаем строку с клавиатуры
+            n = Integer.parseInt(n_str); //преобразовываем строку в число.
+        } catch (Exception ex) {
+            System.out.println("Ошибка ввода 2 числа");
+        }
         sravnenie(m, n);
+
     }
 
     public static void sravnenie(int m, int n) {
